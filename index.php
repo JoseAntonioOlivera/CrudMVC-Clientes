@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../app/controllers/ClienteController.php';
+require_once __DIR__ . '/app/controller/ClienteController.php';
 
 $action = isset($_GET['action']) ? $_GET['action'] : 'index';
 

@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../models/Cliente.php';
+require_once __DIR__ . '/../model/Cliente.php';
 
 class ClienteController
 {
@@ -7,13 +7,13 @@ class ClienteController
   {
     $Clientes = Cliente::all();
     // Subimos un nivel (..) para salir de controllers y entrar en views
-    require __DIR__ . '/../views/Clientes/index.php';
+    require __DIR__ . '/../views/Clients/index.php';
   }
 
   public function create(): void
   {
     $error = '';
-    require __DIR__ . '/../views/Clientes/create.php';
+    require __DIR__ . '/../views/Clients/create.php';
   }
 
   public function store(): void
@@ -44,7 +44,7 @@ class ClienteController
     }
 
     $error = '';
-    require __DIR__ . '/../views/Clientes/edit.php';
+    require __DIR__ . '/../views/Clients/edit.php';
   }
 
   public function update(): void
